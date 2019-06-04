@@ -13,7 +13,7 @@ minSpareThreads="100"
 maxSpareThreads="500"  
 #指定当所有可以使用的处理请求的线程数都被使用时，可以放到处理队列中的请求数，超过这个数的请求将不予处理
 acceptCount="700"  
-![image](https://github.com/Aman8305/linux/blob/master/image/tomcat%E5%86%85%E5%AD%98%E5%92%8C%E5%B9%B6%E5%8F%91%E4%BC%98%E5%8C%96.png)
+![image](https://github.com/Aman8305/linux/blob/master/image/tomcatmemyouhua.png)
 
 export JAVA_HOME=/data/java
 export JRE_HOME=/data/java/jre
