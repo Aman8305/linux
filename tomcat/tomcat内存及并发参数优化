@@ -1,0 +1,20 @@
+内存优化
+#jvm 
+JAVA_OPTS="-server -Xms4096M -Xmx4096M -Xmn2048M -XX:PermSize=256M -XX:MaxPermSize=512M -Duser.timezone=Asia/Shanghai -Djava.awt.headless=true"
+#tomcat
+CATALINA_OPTS="-server -Xms1024M -Xmx2048M  -Duser.timezone=Asia/Shanghai -Djava.awt.headless=true"
+并发优化
+<Executor name="tomcatThreadPool" namePrefix="catalina-exec-" maxThreads="500" minSpareThreads="100" maxSpareThreads="350" acceptCount="350" maxIdleTime="30000"/>
+#最大线程数
+maxThreads="600"  
+#初始化时创建的线程数
+minSpareThreads="100"  
+#一旦创建的线程超过这个值，Tomcat就会关闭不再需要的socket线程
+maxSpareThreads="500"  
+#指定当所有可以使用的处理请求的线程数都被使用时，可以放到处理队列中的请求数，超过这个数的请求将不予处理
+acceptCount="700"  
+image/tomcat内存和并发优化.png
+
+export JAVA_HOME=/data/java
+export JRE_HOME=/data/java/jre
+CATALINA_OPTS="-server -Xms256M -Xmx1024M -Xmn128M -XX:PermSize=128M -XX:MaxPermSize=256M -Duser.timezone=Asia/Shanghai -Djava.awt.headless=true"
