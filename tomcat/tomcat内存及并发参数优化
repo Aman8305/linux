@@ -14,7 +14,6 @@ maxSpareThreads="500"
 #指定当所有可以使用的处理请求的线程数都被使用时，可以放到处理队列中的请求数，超过这个数的请求将不予处理
 acceptCount="700"  
 ![image](https://github.com/Aman8305/linux/blob/master/image/tomcatmemyouhua.png)
-
 export JAVA_HOME=/data/java
 export JRE_HOME=/data/java/jre
 CATALINA_OPTS="-server -Xms256M -Xmx1024M -Xmn128M -XX:PermSize=128M -XX:MaxPermSize=256M -Duser.timezone=Asia/Shanghai -Djava.awt.headless=true"
